@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <style>
+            div.calculator {
+                width: 300px;
+                height: 380px;
+                margin: 100px auto;
+                background-color: rgba(206, 225, 241, 0.726);
+            }
+
+            .display {
+                font-size: 50px;
+                background-image:linear-gradient(rgb(222, 238, 240), aliceblue);
+                width: 96%;
+                height: 70px;
+                margin-top: 5px;
+                margin-left: 2.5px;
+                border: solid 1px gray;
+                border-radius: 2.5px;
+                text-align: right;
+            }
+
+            .buttons {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;    
+                margin-top: 10px;
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+
+            button {
+                font-size: 20px;
+                height: 40px;
+                padding: 1px;
+                margin: 3px;
+                padding: 5px;
+            }
+
+            button:hover {
+                background-image: linear-gradient(rgba(193, 234, 240, 0.8), aliceblue);
+            }
+
+            .M {
+                background-color: rgb(206, 225, 241);
+            }
+
+            .operator {
+                background-image: linear-gradient(aliceblue, rgba(193, 234, 240, 0.8));
+            }
+
+            .operator:hover {
+                background-image: linear-gradient(rgb(126, 180, 228), rgba(138, 227, 241, 0.8));
+            }
+
+            .numbers {
+                background-color: aliceblue;
+            }
+
+            .igual {
+                font-weight: bolder;
+                height: 94%;
+                grid-row-end: span 2;
+            }
+
+            .zero {
+                grid-column-end: span 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <input type="text" class="display" disabled value="0">
+
+            <div class="buttons">
+                <button type="button" class="M">MC</button>
+                <button type="button" class="M">MR</button>
+                <button type="button" class="M">MS</button>
+                <button type="button" class="M">M+</button>
+                <button type="button" class="M">M-</button>
+
+                <button type="button" class="operator" value="seta">&larr;</button>
+                <button type="button" class="operator">CE</button>
+                <button type="button" class="operator">C</button>
+                <button type="button" class="operator" value="mais-menos">&plusmn;</button>
+                <button type="button" class="operator" value="raiz-quadrada">&radic;</button>
+
+                <button type="button" class="numbers" value="7">7</button>
+                <button type="button" class="numbers" value="8">8</button>
+                <button type="button" class="numbers" value="9">9</button>
+                <button type="button" class="operator" value="/">/</button>
+                <button type="button" class="operator" value="%">&percnt;</button>
+
+                <button type="button" class="numbers" value="4">4</button>
+                <button type="button" class="numbers" value="5">5</button>
+                <button type="button" class="numbers" value="6">6</button>
+                <button type="button" class="operator" value="*">*</button>
+                <button type="button" class="operator" value="1/x">1/x</button>
+
+                <button type="button" class="numbers" value="1">1</button>
+                <button type="button" class="numbers" value="2">2</button>
+                <button type="button" class="numbers" value="3">3</button>
+                <button type="button" class="operator" value="-">-</button>  
+                <button type="button" class="operator igual" value="=">=</button>             
+
+                <button type="button" class="numbers zero" value="0">0</button>
+                <button type="button" class="numbers" value=",">,</button>
+                <button type="button" class="operator" value="+">+</button>
+            </div>
+        </div>
+    </body>
+</html>
